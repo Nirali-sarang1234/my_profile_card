@@ -1,0 +1,152 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.container{
+  width: 100%;
+  height:100vh;
+  margin: 0;    
+  background-color: #11999E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  Background images   */
+.top{
+  position: absolute;
+  right: 40%;
+  bottom: 40%;
+}
+.bottom{
+  position: absolute;
+  left:40%;
+  top:40%;
+}
+
+/*  Profile card  */
+.profile_card{
+  margin:0 0  10px;
+  border-radius: 15px;
+  width:300px;
+  height:400px;
+  position: relative;
+
+  display: flex;
+  z-index: 2;
+  justify-content: center;
+  flex-flow: column nowrap;
+  background-image: url("images/bg-pattern-card.svg");
+  background-size: 100% 35%;
+  background-repeat: no-repeat;
+  background-color: white;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+/* Profile picture  */
+.profile_picture{
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 20px 0;
+}
+.profile_picture img{
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+
+/* Personal Information  */
+.profile_info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+.personal_info{
+  width:100%;
+  border-bottom: 1px solid #a7a4a4;
+  padding:  0 0 40px 0;
+}
+.personal_info .name{
+  display: inline-block;
+  margin-right: -4px;
+  width:65%;
+  text-align: right;
+  font-weight: 800;
+}
+.personal_info .age{
+  display: inline-block;
+  margin-left:5px;
+  margin-right: -4px;
+  color: #a7a4a4;
+   text-align: left;
+}
+.personal_info .city{
+  text-align: center;
+  font-weight: lighter;
+  font-size: 12px;
+  color: #a7a4a4;
+  line-height: 25px;
+}
+.profile_info span{
+  font-weight: 800;
+}
+.description ul{
+  list-style: none;
+  display: flex;
+  width: 100%;
+  padding: 40px 0 0;
+  margin: 0;
+}
+.description ul li{
+  text-align: center;
+  float: left;
+  font-weight: lighter;
+  font-size: 12px;
+  color: #a7a4a4;
+  line-height: 15px;
+  padding: 0 15px;
+}
+ .description ul li span{
+   font-weight: 800;
+   color: #000000;
+   font-size: 18px;
+ }
+
+ @media only screen and (min-width: 760px) {
+   body {
+     font-size: 26px;
+   }
+
+   .top {
+     position: absolute;
+     bottom: 60%;
+     right: 60%;
+   }
+
+   .bottom {
+     position: absolute;
+     top: 60%;
+     left: 60%;
+   }
+
+   .profile_card {
+     height: 500px;
+     width: 450px;
+   }
+
+   .personal_info .city {
+     font-size: 14px;
+   }
+
+   .description ul li {
+     font-size: 14px;
+     line-height: 20px;
+   }
+
+   .description ul li span {
+     font-size: 26px;
+   }
+ }
